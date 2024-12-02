@@ -1,0 +1,64 @@
+{
+  "sections": [
+    {
+      "title": "Welcome to Marky",
+      "description": "Marky is a powerful Markdown editor that helps you create beautifully formatted content with ease. This guide will help you master Markdown syntax and make the most of our features.",
+      "examples": null
+    },
+    {
+      "title": "Basic Text Formatting",
+      "description": "Format your text using simple Markdown syntax for emphasis and styling.",
+      "examples": "*italic text* or _italic text_\n**bold text** or __bold text__\n***bold and italic***\n~~strikethrough text~~"
+    },
+    {
+      "title": "Headers",
+      "description": "Create headings of different levels using hash symbols (#).",
+      "examples": "# Heading 1\n## Heading 2\n### Heading 3\n#### Heading 4\n##### Heading 5\n###### Heading 6"
+    },
+    {
+      "title": "Lists",
+      "description": "Create ordered and unordered lists with easy-to-use syntax.",
+      "examples": "Unordered list:\n- Item 1\n- Item 2\n  - Nested item\n\nOrdered list:\n1. First item\n2. Second item\n   1. Nested item"
+    },
+    {
+      "title": "Links and Images",
+      "description": "Add links to websites and insert images into your content.",
+      "examples": "Link: [Link text](https://example.com)\nImage: ![Alt text](image-url.jpg)\nLinked image: [![Alt text](image-url.jpg)](https://example.com)"
+    },
+    {
+      "title": "Code Formatting",
+      "description": "Format code snippets and add syntax highlighting.",
+      "examples": "Inline code: `code`\n\nCode block:\n```javascript\nfunction example() {\n  return 'Hello, World!';\n}\n```"
+    },
+    {
+      "title": "Blockquotes",
+      "description": "Create blockquotes for citations or highlighted content.",
+      "examples": "> Single quote\n>> Nested quote\n>>> Deep nested quote"
+    },
+    {
+      "title": "Tables",
+      "description": "Create structured tables with column alignment.",
+      "examples": "| Header 1 | Header 2 |\n|----------|----------|\n| Cell 1   | Cell 2   |"
+    },
+    {
+      "title": "Export Options",
+      "description": "Marky supports multiple export formats for your convenience:",
+      "examples": "- Rich Text: Formatted preview with styling\n- HTML: Clean HTML output\n- XML: Structured XML format\n- JSON: Parsed markdown tokens\n- Plain Text: Raw text without formatting\n- Word (.docx): Microsoft Word document"
+    },
+    {
+      "title": "Cloud Storage",
+      "description": "Connect with your favorite cloud storage providers to save and load your documents:",
+      "examples": "- Google Drive\n- OneDrive\n- Dropbox\n- GitHub"
+    },
+    {
+      "title": "Keyboard Shortcuts",
+      "description": "Speed up your workflow with these helpful keyboard shortcuts:",
+      "examples": "Ctrl/Cmd + B: Bold\nCtrl/Cmd + I: Italic\nCtrl/Cmd + K: Insert link\nCtrl/Cmd + Shift + V: Paste as plain text"
+    },
+    {
+      "title": "Tips and Best Practices",
+      "description": "Follow these guidelines for better Markdown documents:",
+      "examples": "1. Use consistent formatting\n2. Include blank lines between sections\n3. Use proper header hierarchy\n4. Add descriptive alt text to images\n5. Specify language for code blocks"
+    }
+  ]
+}

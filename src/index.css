@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 244 63 94; /* rose-500 */
+    --color-secondary: 251 113 133; /* rose-400 */
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+  }
+
+  a {
+    @apply text-[rgb(var(--color-primary))] hover:text-[rgb(var(--color-secondary))];
+  }
+
+  mark {
+    @apply bg-yellow-200 dark:bg-yellow-500/30;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-3 py-1.5 rounded-lg text-sm font-medium transition-all;
+  }
+
+  .btn-primary {
+    @apply bg-[rgb(var(--color-primary))] text-white hover:bg-[rgb(var(--color-secondary))] shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700;
+  }
+
+  .input {
+    @apply px-3 py-1.5 rounded-lg text-sm border border-gray-200 bg-white/90 dark:border-gray-700 dark:bg-gray-800/90 focus:outline-none focus:ring-2 focus:ring-[rgb(var(--color-primary))];
+  }
+
+  .card {
+    @apply bg-white/90 dark:bg-gray-800/90 rounded-lg shadow-sm border border-gray-100/20 dark:border-gray-700/20 backdrop-blur-sm;
+  }
+
+  .tag {
+    @apply inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300;
+  }
+
+  .icon-btn {
+    @apply p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 transition-all;
+  }
+
+  .menu-item {
+    @apply flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors;
+  }
+
+  .header-title {
+    @apply text-lg font-semibold text-gray-900 dark:text-white;
+  }
+
+  .header-subtitle {
+    @apply text-sm text-gray-500 dark:text-gray-400;
+  }
+
+  .avatar {
+    @apply rounded-full object-cover;
+  }
+
+  .avatar-placeholder {
+    @apply rounded-full flex items-center justify-center bg-[rgb(var(--color-primary))]/10 dark:bg-[rgb(var(--color-primary))]/20;
+  }
+
+  .link {
+    @apply text-[rgb(var(--color-primary))] hover:text-[rgb(var(--color-secondary))] transition-colors;
+  }
+
+  .sidebar {
+    @apply fixed inset-y-0 left-0 z-30 w-64 transform transition-transform duration-300 ease-in-out bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700;
+  }
+
+  .sidebar-collapsed {
+    @apply -translate-x-full md:translate-x-0;
+  }
+
+  .main-content {
+    @apply ml-0 md:ml-64 transition-all duration-300;
+  }
+
+  .search-bar {
+    @apply w-full max-w-xl mx-auto relative;
+  }
+
+  @screen md {
+    .search-bar {
+      @apply mx-0;
+    }
+  }
+}
+
+/* Glass effect */
+.glass {
+  @apply bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border border-gray-100/20 dark:border-gray-700/20;
+}
+
+/* Gradient background */
+.gradient-bg {
+  @apply bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800;
+}
+
+/* Theme transitions */
+* {
+  @apply transition-colors duration-200;
+}
